@@ -1,9 +1,13 @@
-.header {
-    height: 237px;
+.header__title {
     align-items: center;
-    padding-left: 160px;
-    font-family: 'Inter';
+    color: var(--black);
+    padding-top: 96px;
+    padding-bottom: 77px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 50px;
-    color: var(--black);
 }
+

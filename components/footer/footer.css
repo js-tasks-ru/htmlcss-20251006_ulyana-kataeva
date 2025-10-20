@@ -1,19 +1,25 @@
 .footer {
-    height: 237px;
     text-align: center;
-    font-family: 'Inter';
     color: var(--black);
+    padding-top: 71px;
+    padding-bottom: 136px;
 }
 
 .footer__title {
     font-weight: 500;
     font-size: 38px;
+    margin-bottom: 32px;
 }
 
+.paragraph__wrapper{
+    display: flex;
+    justify-content: center;
+}
 .footer__text {
-    width: 640px;
-    height: 96px;
-    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    max-width: 640px;
 }
