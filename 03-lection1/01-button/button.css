@@ -1,1 +1,73 @@
 /* Стилизация кнопки */
+.button__wrapper {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    margin-bottom: 16px;
+}
+
+button {
+    width: 189px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 33px;
+    border: 0; /* normalize? */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.primary {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.primary:hover {
+    background-color: var(--blue-2);
+    color: var(--white);
+}
+
+.primary__disabled:disabled {
+    background-color: var(--blue);
+    color: var(--white);
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.secondary {
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.secondary:hover {
+    background-color: var(--purple-2);
+    color: var(--white);
+}
+
+.secondary__disabled:disabled {
+    background-color: var(--purple);
+    color: var(--white);
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.alternate {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+}
+
+.alternate:hover {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--black);
+}
+
+.alternate__disabled:disabled {
+    background-color: var(--white);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
