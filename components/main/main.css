@@ -1,7 +1,7 @@
 .main {
     background-color: var(--grey5);
-    padding-top: 517.5px;
-    padding-bottom: 517.5px;
+    padding-top: 517px;
+    padding-bottom: 517px;
     border-top: 1px solid var(--grey-2);
     border-bottom: 1px solid var(--grey-2);
 }
