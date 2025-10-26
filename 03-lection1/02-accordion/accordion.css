@@ -18,7 +18,7 @@
     margin-bottom: 0;
 }
 
-.accordion_content {
+.accordion__content {
     color: var(--grey-4);
     margin: 16px 0 8px;
     font-family: 'Inter', sans-serif;
