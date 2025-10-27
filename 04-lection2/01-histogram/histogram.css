@@ -1,4 +1,4 @@
-.card {
+.histogram {
   width: 100%;
   max-width: 354px;
   border: 1px solid var(--grey-3);
@@ -8,7 +8,7 @@
   background: var(--white);
 }
 
-.card__header {
+.histogram__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,23 +19,23 @@
   line-height: 24px;
 }
 
-.card__title {
+.histogram__title {
   color: var(--black);
   margin: 0;
 }
 
-.card__view-all {
+.histogram__view-all {
   color: var(--link-blue);
   text-decoration: none;
   cursor: pointer;
   margin-top: 3px;
 }
 
-.card__view-all:hover {
+.histogram__view-all:hover {
   text-decoration: underline;
 }
 
-.card__count {
+.histogram__count {
   font-weight: 400;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
@@ -44,7 +44,7 @@
   margin: 0;
 }
 
-.histogram {
+.histogram__area {
   display: flex;
   align-items: flex-end;
   gap: 1px;
