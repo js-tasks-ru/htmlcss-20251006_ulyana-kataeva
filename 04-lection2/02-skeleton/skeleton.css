@@ -1,4 +1,4 @@
-.card {
+.skeleton {
   width: 100%;
   max-width: 579px;
   border: 1px solid var(--grey-3);
@@ -9,14 +9,14 @@
 }
 
 /* Аватар + инфо о пользователе */
-.card__header {
+.skeleton__header {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 24px;
 }
 
-.card__avatar {
+.cskeleton__avatar {
   width: 64px;
   height: 64px;
   background-color: var(--grey-2);
@@ -24,32 +24,32 @@
 }
 
 /* Инфо о пользователе - имя и ник */
-.card__info {
+.skeleton__info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.card__username {
+.skeleton__username {
   height: 20px;
   width: 172px;
   background: var(--skeleton-gradient);
 }
 
-.card__nick {
+.skeleton__nick {
   height: 20px;
   width: 257px;
   background: var(--skeleton-gradient);
 }
 
-.card__content {
+.skeleton__content {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.content__line {
+.skeleton__line {
   height: 20px;
   width: 100%; 
   background: var(--skeleton-gradient);
