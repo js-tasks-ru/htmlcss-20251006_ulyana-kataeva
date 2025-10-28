@@ -1,6 +1,4 @@
 .skeleton {
-  width: 100%;
-  max-width: 579px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 32px 40px 32px 24px;
@@ -16,7 +14,7 @@
   margin-bottom: 24px;
 }
 
-.cskeleton__avatar {
+.skeleton__avatar {
   width: 64px;
   height: 64px;
   background-color: var(--grey-2);
@@ -31,18 +29,6 @@
   gap: 8px;
 }
 
-.skeleton__username {
-  height: 20px;
-  width: 172px;
-  background: var(--skeleton-gradient);
-}
-
-.skeleton__nick {
-  height: 20px;
-  width: 257px;
-  background: var(--skeleton-gradient);
-}
-
 .skeleton__content {
   display: flex;
   flex-direction: column;
@@ -51,6 +37,17 @@
 
 .skeleton__line {
   height: 20px;
-  width: 100%; 
   background: var(--skeleton-gradient);
+}
+
+.skeleton__line_w34 {
+  width: 34%;
+}
+
+.skeleton__line_w50 {
+  width: 50%;
+}
+
+.skeleton__line_w100 {
+  width: 100%;
 }
