@@ -25,6 +25,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --skeleton-gradient: linear-gradient(to right, #DDE2E5, #E2E6E8, #F3F5F5, #E3E7EA, #DDE2E5);
 }
 
 * {
