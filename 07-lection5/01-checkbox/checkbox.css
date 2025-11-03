@@ -1,0 +1,118 @@
+.checkbox-group__title {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    color: var(--grey-3);
+    line-height: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+/* Сокрытие чекбокса по умолчанию */
+.checkbox__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Свой чекбокс */
+.checkbox__box {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    background-color: var(--white);
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Галочка */
+.checkbox__box::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 11px;
+    transform: translate(-50%, -60%) rotate(45deg);
+    border: solid var(--white);
+    border-width: 0 3px 3px 0;
+}
+
+/* Лейбл */
+.checkbox__label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-4);
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* hover */
+.checkbox:hover .checkbox__box {
+    border-color: var(--calen-boundary-backgr);
+}
+
+/* focus (для лейбла) */
+.checkbox__input:focus ~ .checkbox__label {
+    text-decoration: underline;
+}
+
+/* focus (для чекбокса) */
+.checkbox__input:focus ~ .checkbox__box {
+    outline: 2px solid var(--calen-boundary-backgr);
+    outline-offset: 2px;
+}
+
+/* checked */
+.checkbox__input:checked ~ .checkbox__box {
+    background-color: var(--calen-boundary-backgr);
+    border-color: var(--calen-boundary-backgr);
+}
+
+.checkbox__input:checked ~ .checkbox__box::after {
+    display: block;
+}
+
+/* disabled */
+.checkbox__input:disabled ~ .checkbox__box {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+    cursor: not-allowed;
+}
+
+.checkbox__input:disabled ~ .checkbox__label {
+    color: var(--grey-2);
+    cursor: not-allowed;
+}
+
+.checkbox:has(.checkbox__input:disabled) {
+    cursor: not-allowed;
+}
+
+/* checked + disabled */
+.checkbox__input:checked:disabled ~ .checkbox__box {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+/* focus + checked */
+.checkbox__input:focus:checked ~ .checkbox__box {
+    outline: 2px solid var(--calen-boundary-backgr);
+    outline-offset: 2px;
+}
+
+/* focus + disabled */
+.checkbox__input:focus:disabled ~ .checkbox__box {
+    outline: none;
+}
