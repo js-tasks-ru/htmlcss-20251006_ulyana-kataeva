@@ -5,14 +5,12 @@
     color: var(--grey-3);
     line-height: 18px;
     font-family: 'Inter', sans-serif;
-    margin-bottom: 13px;
 }
 
 .radio {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 16px;
     cursor: pointer;
     user-select: none;
     position: relative;
@@ -110,12 +108,6 @@
 
 .radio__input:checked:disabled ~ .radio__circle::after {
     background-color: var(--white);
-}
-
-/* focus + checked */
-.radio__input:focus:checked ~ .radio__circle {
-    outline: 2px solid var(--calen-boundary-backgr);
-    outline-offset: 2px;
 }
 
 /* focus + disabled */
