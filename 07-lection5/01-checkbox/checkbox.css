@@ -8,7 +8,7 @@
 }
 
 .checkbox {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 12px;
     cursor: pointer;
@@ -42,11 +42,13 @@
     display: none;
     left: 50%;
     top: 50%;
-    width: 6px;
-    height: 11px;
-    transform: translate(-50%, -60%) rotate(45deg);
-    border: solid var(--white);
-    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('Vector (Stroke).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Лейбл */
@@ -66,12 +68,6 @@
 /* focus (для лейбла) */
 .checkbox__input:focus ~ .checkbox__label {
     text-decoration: underline;
-}
-
-/* focus (для чекбокса) */
-.checkbox__input:focus ~ .checkbox__box {
-    outline: 2px solid var(--calen-boundary-backgr);
-    outline-offset: 2px;
 }
 
 /* checked */
@@ -104,12 +100,6 @@
 .checkbox__input:checked:disabled ~ .checkbox__box {
     background-color: var(--grey-2);
     border-color: var(--grey-2);
-}
-
-/* focus + checked */
-.checkbox__input:focus:checked ~ .checkbox__box {
-    outline: 2px solid var(--calen-boundary-backgr);
-    outline-offset: 2px;
 }
 
 /* focus + disabled */
