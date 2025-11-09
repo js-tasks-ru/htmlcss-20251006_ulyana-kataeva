@@ -1,0 +1,107 @@
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+/* Скрытие круга по умолчанию */
+.radio__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Свой круг */
+.radio__circle {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    background-color: var(--white);
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Внутренняя точка */
+.radio__circle::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--calen-boundary-backgr);
+}
+
+/* Лейбл */
+.radio__label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey-4);
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* hover */
+.radio:hover .radio__circle {
+    border-color: var(--calen-boundary-backgr);
+}
+
+/* focus (лейбл) */
+.radio__input:focus ~ .radio__label {
+    text-decoration: underline;
+}
+
+/* focus (круг) */
+.radio__input:focus ~ .radio__circle {
+    outline: 2px solid var(--calen-boundary-backgr);
+    outline-offset: 2px;
+}
+
+/* checked */
+.radio__input:checked ~ .radio__circle {
+    background-color: var(--white);
+    border-color: var(--calen-boundary-backgr);
+}
+
+.radio__input:checked ~ .radio__circle::after {
+    display: block;
+}
+
+/* disabled */
+.radio__input:disabled ~ .radio__circle {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+    cursor: not-allowed;
+}
+
+.radio__input:disabled ~ .radio__label {
+    color: var(--grey-2);
+    cursor: not-allowed;
+}
+
+.radio:has(.radio__input:disabled) {
+    cursor: not-allowed;
+}
+
+/* checked + disabled */
+.radio__input:checked:disabled ~ .radio__circle {
+    background-color: var(--grey-2);
+    border-color: var(--grey-2);
+}
+
+.radio__input:checked:disabled ~ .radio__circle::after {
+    background-color: var(--white);
+}
+
+/* focus + disabled */
+.radio__input:focus:disabled ~ .radio__circle {
+    outline: none;
+}
