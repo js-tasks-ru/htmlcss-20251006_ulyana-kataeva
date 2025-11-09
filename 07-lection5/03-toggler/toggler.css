@@ -1,12 +1,3 @@
-.toggle-group__title {
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    color: var(--grey-3);
-    line-height: 18px;
-    font-family: 'Inter', sans-serif;
-}
-
 .toggle {
     display: inline-flex;
     align-items: center;
