@@ -6,6 +6,37 @@
         <link rel="stylesheet" href="./checkbox.css">
     </head>
     <body>
+        <!-- Default -->
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox">
+            <span class="checkbox__box">
+                <svg class="checkbox__icon">
+                    <use href="../../assets/images/icons-sprite.svg#icon-checkmark"/>
+                </svg>
+            </span>
+            <p class="checkbox__label">Default</p>
+        </label>
 
+        <!-- Checked -->
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" checked>
+            <span class="checkbox__box">
+                <svg class="checkbox__icon">
+                    <use href="../../assets/images/icons-sprite.svg#icon-checkmark"/>
+                </svg>
+            </span>
+            <p class="checkbox__label">Checked</p>
+        </label>
+
+        <!-- Disabled -->
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" disabled>
+            <span class="checkbox__box">
+                <svg class="checkbox__icon">
+                    <use href="../../assets/images/icons-sprite.svg#icon-checkmark"/>
+                </svg>
+            </span>
+            <p class="checkbox__label">Disabled</p>
+        </label>
     </body>
 </html>
