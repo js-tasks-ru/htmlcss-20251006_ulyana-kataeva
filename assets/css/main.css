@@ -19,6 +19,7 @@
     --grey-4: #495057;
     --link-blue: #4263EB;
     --grey5: #F9FAFC;
+    --modal-background: #C4C4C4;
 
     --error: var(--red);
     --success: var(--blue);
