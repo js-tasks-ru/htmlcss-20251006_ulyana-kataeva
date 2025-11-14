@@ -1,0 +1,76 @@
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* Фон */
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-background);
+}
+
+/* Контент модалки */
+.modal__content {
+    position: relative;
+    width: 428px;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 40px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+}
+
+/* Заголовок */
+.modal__title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--calen-title-blue);
+    margin: 0 0 14px 0;
+}
+
+/* Крестик */
+.modal__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.modal__close svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--grey-3);
+}
+
+.modal__close:hover svg {
+    fill: var(--black);
+}
+
+/* Текст */
+.modal__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin: 0;
+}

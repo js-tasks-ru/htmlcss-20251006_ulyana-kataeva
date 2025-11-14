@@ -4,9 +4,36 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./modal.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
         <title>Modal</title>
     </head>
     <body>
+        <!-- Кнопка открытия модалки -->
+        <button id="modal-open" class="button_primary">Open modal</button>
+
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <!-- Затемнение -->
+            <div class="modal__overlay"></div>
+            
+            <!-- Контент модалки -->
+            <div class="modal__content">
+                <!-- Заголовок -->
+                <h2 class="modal__title">Modal title</h2>
+                
+                <!-- Кнопка закрытия -->
+                <button id="modal-close" class="modal__close">
+                    <svg width="16" height="16">
+                        <use href="../../assets/images/icons-sprite.svg#icon-close"/>
+                    </svg>
+                </button>
+                
+                <!-- Текст -->
+                <p class="modal__text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
